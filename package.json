@@ -1,8 +1,11 @@
 {
-  "name": "@shelf/serverless-simplify-default-exec-role-plugin",
+  "name": "@collegeboard-software/serverless-simplify-default-exec-role-plugin",
   "version": "0.0.2",
   "description": "serverless-simplify-default-exec-role-plugin",
   "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/collegeboard-software/serverless-simplify-default-exec-role-plugin.git"
+  },
   "author": {
     "name": "Vlad Holubiev",
     "email": "vlad@shelf.io",
@@ -15,9 +18,9 @@
   "dependencies": {},
   "devDependencies": {},
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "publishConfig": {
-    "access": "public"
+    "@collegeboard-software/registry": "https://npm.pkg.github.com"
   }
 }

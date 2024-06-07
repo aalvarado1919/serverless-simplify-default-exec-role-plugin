@@ -9,7 +9,7 @@ It searches for the `IamRoleLambdaExecution` resource and modifies the only poli
 ## Install
 
 ```
-$ yarn add --dev @shelf/serverless-simplify-default-exec-role-plugin
+$ yarn add --dev @collegeboard-software/serverless-simplify-default-exec-role-plugin
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ In your `serverless.yml` file:
 
 ```yaml
 plugins:
-  - '@shelf/serverless-simplify-default-exec-role-plugin'
+  - '@collegeboard-software/serverless-simplify-default-exec-role-plugin'
 ```
 
 ## Explanation
