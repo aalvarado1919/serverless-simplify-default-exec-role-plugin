@@ -28,7 +28,7 @@ By default, Serverless framework creates such role:
 ```json5
 {
   Effect: "Allow",
-  Action: ["logs:CreateLogStream", "logs:CreateLogGroup"],
+  Action: ["logs:CreateLogStream", "logs:CreateLogGroup", "logs:TagResource"],
   Resource: [
     {
       "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/production-users-createUser:*",
@@ -51,7 +51,7 @@ This plugin simplifies the default execution role to smth like this:
 ```json5
 {
   Effect: "Allow",
-  Action: ["logs:CreateLogStream", "logs:CreateLogGroup"],
+  Action: ["logs:CreateLogStream", "logs:CreateLogGroup", "logs:TagResource", "logs:PutLogEvents"],
   Resource: [
     {
       "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:*",
@@ -64,8 +64,7 @@ This plugin simplifies the default execution role to smth like this:
 
 ```sh
 $ git checkout master
-$ yarn version
-$ yarn publish
+$ npm publish --registry=https://npm.pkg.github.com
 $ git push origin master --tags
 ```
 
